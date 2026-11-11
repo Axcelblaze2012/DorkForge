@@ -1,0 +1,25 @@
+# SearXNG configuration for Dork Atlas Ultimate
+use_default_settings: true
+
+general:
+  debug: false
+  instance_name: "Dork Atlas SearXNG"
+
+search:
+  safe_search: 1
+  autocomplete: ""
+  default_lang: ""
+  formats:
+    - html
+    - json
+
+server:
+  port: 8080
+  bind_address: "0.0.0.0"
+  secret_key: "dork-atlas-ultimate-insecure-dev-key-change-in-production"
+  limiter: false
+  image_proxy: false
+
+ui:
+  static_use_hash: true
+  default_locale: "en"

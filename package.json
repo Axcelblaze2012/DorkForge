@@ -1,0 +1,15 @@
+{
+  "name": "dork-atlas-ultimate",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "dev:backend": "backend/.venv/bin/uvicorn app.main:app --app-dir backend --reload --port 8000",
+    "build": "npm --prefix frontend run build",
+    "preview": "npm --prefix frontend run preview",
+    "typecheck": "npm --prefix frontend run typecheck",
+    "test:frontend": "npm --prefix frontend run test",
+    "test:backend": "backend/.venv/bin/pytest backend/tests",
+    "test": "npm run test:frontend && npm run test:backend"
+  }
+}
